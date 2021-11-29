@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./components/login/App";
+import App from "./components/codevolution-study/App";
 
 ReactDOM.render(
   <React.StrictMode>
