@@ -1,0 +1,272 @@
+@import "../../variables/Variables.sass"
+
+.title
+  font-size: 25px
+  color: $blue
+  margin-bottom: 15px
+
+.btn
+  margin-right: 5px;
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 5px
+  color: $white
+  font-size: 13px
+  background-color: $blue
+  box-shadow: $box-shadow
+
+  &:hover
+    background-color: $black
+
+.container
+  padding: 100px 9%
+  background: linear-gradient(45deg, deeppink, $blue )
+  display: flex
+
+  .profile
+    flex: 1 1 400px;
+    background-color: $white
+    padding: 30px 20px
+    text-align: center
+    position: sticky
+    top: 20px; left:0px
+    border-right: 2px solid $black
+    align-self: flex-start
+
+    img
+      height: 150px; width: 150px;
+      border-radius: 50%
+      border: 2px solid $black
+      object-fit: cover
+      margin-bottom: 10px
+
+    h3
+      color: $black
+      font-size: 20px
+
+    p
+      color: $blue
+      padding: 5px 0
+      margin-bottom: 10px
+      font-size: 15px
+
+    .share
+      margin: 10px 0
+      display: flex
+      justify-content: center
+
+      .iconbox
+        height: 30px; width: 30px
+        background-color: $light-bg
+        border-radius: 50%
+        margin-right: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+        .icon
+          color: $black
+          font-size: 15px
+
+        &:hover
+          background-color: $blue
+          color: $white
+          box-shadow: $box-shadow
+
+  .information
+    flex: 1 1 1000px;
+    background-color : $white
+    padding: 20px 20px
+
+    .about
+      p
+        font-size: 17px
+        line-height: 2
+        padding: 5px 0
+        color: $light-color
+
+      .box-container
+        display: flex
+        flex-wrap: wrap
+        gap: 15px
+
+        .box
+          flex: 1 1 250px
+
+          h3
+            font-size: 15px
+            padding: 10px 0
+            color: $black
+
+            span
+              color: $light-color
+    .services
+      padding: 20px 0
+
+      .box-container
+        display: flex
+        flex-wrap: wrap
+        gap: 15px
+
+        .box
+          flex: 1 1 17px
+          text-align: center
+          border-radius: 5px
+          padding: 20px
+          background-color: $light-bg
+
+          img
+            height: 50px
+            margin-bottom: 10px
+
+    .skills
+      .box-container
+        display: flex
+        flex-wrap: wrap
+        gap: 15px
+
+        .box
+          flex: 1 1 300px
+
+          .progress
+            h3
+              padding: 10px
+              display: flex
+              justify-content: space-between
+              color: $black
+              font-size: 15px
+
+              span
+                color: $light-color
+
+            .bar
+              overflow: hidden
+              border-radius: 50px
+              height: 10px
+              background-color: $light-bg
+
+              span
+                background-color: $blue
+                height: 100%
+                display: block
+                border-radius: 50px
+              
+.container .information .skills .box-container .box
+  &:first-child .progress
+    &:nth-child(1) .bar span
+      width: 95%
+
+    &:nth-child(2) .bar span
+      width: 80%
+
+    &:nth-child(3) .bar span
+      width: 65%
+
+    &:nth-child(4) .bar span
+      width: 70%
+
+  &:last-child .progress
+    &:nth-child(1) .bar span
+      width: 90%
+
+    &:nth-child(2) .bar span
+      width: 75%
+
+    &:nth-child(3) .bar span
+      width: 65%
+
+    &:nth-child(4) .bar span
+      width: 70%
+
+.container .information .experience
+  margin: 20px 0
+
+  .box-container
+    display: flex
+    flex-wrap: wrap
+    gap: 15px
+
+    .box
+      padding: 20px
+      border-radius: 5px
+      flex: 1 1 35px
+      background-color: $light-bg
+
+      span
+        color: $blue
+        font-size: 15px
+
+      h3
+        color: $black
+        font-size: 17px
+
+      p
+        color: $light-color
+        line-height: 2
+        font-size: 13px
+
+.container .information .contact
+  .box-container
+    display: flex
+    flex-wrap: wrap
+    gap: 15px
+  .box
+    flex: 1 1 200px
+    display: flex
+    align-self: flex-start
+    gap: 10px
+    
+    .iconbox
+      height: 40px; width: 40px
+      border-radius: 50%
+      background-color: $blue
+      display: flex
+      justify-content: center
+      align-items: center
+      .icon
+        color: $white
+        font-size: 25px
+
+    .h3
+      font-size: 17px
+      color: $black
+      padding-bottom: 5px
+
+    p
+      font-size: 14px
+      color: $light-color
+      line-height: 2
+
+@media (max-width:1200px)
+  .container
+    flex-flow: column
+    padding: 20px
+    justify-content: center
+
+    .profile
+      position: static
+      border-radius: 5px
+      box-shadow: $box-shadow
+      padding: 20px
+      border-right: none
+      margin: 0 auto
+      margin-bottom: 15px
+
+    .information
+      border-radius: 5px
+      box-shadow: $box-shadow
+      padding: 20px
+
+@media (max-width:450px)
+  .container .profile
+    width: 100%
+
+    .btn
+      width: 100%
+
+  .container .information
+    .about p
+      font-size: 12px
+
+    .experience .box-container .box
+      p
+        font-size: 12px

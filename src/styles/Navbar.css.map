@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,OAAO,CAAC;EACN,gBAAgB,ECJL,OAAa;EDKxB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,QAAQ;EACzB,aAAa,EAAE,MAAM;CASE;;AAfzB,AAQE,OARK,CAQL,MAAM,CAAC;EACL,YAAY,EAAE,IAAI;CAMC;;AAfvB,AAWI,OAXG,CAQL,MAAM,CAGJ,CAAC,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,IAAI;EACrB,MAAM,EAAE,IAAI;CAAG",
+    "sources": [
+        "Navbar.sass",
+        "../variables/Variables.sass"
+    ],
+    "names": [],
+    "file": "Navbar.css"
+}
