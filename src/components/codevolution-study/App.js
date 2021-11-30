@@ -1,11 +1,10 @@
-import React from 'react';
 import "./App.css"
-import MyProps from "./myprops"
+import DataFetching from "./data-fetching"
 
 const App = () => {
   return (
     <div>
-      <MyProps name="Diana" heroname="Wonder Woman"/>
+      <DataFetching/>
     </div>
   );
 };

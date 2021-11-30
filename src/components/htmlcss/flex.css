@@ -1,0 +1,56 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 6px solid black;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .flex-item {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid blue;
+}
+
+.container .item1 {
+  background-color: #b4bf35;
+}
+
+.container .item2 {
+  background-color: #b95f21;
+}
+
+.container .item3 {
+  background-color: #1c4c56;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.container .item4 {
+  background-color: #cfb276;
+}
+
+.container .item5 {
+  background-color: #6b0803;
+}
+
+.container .item6 {
+  background-color: #b4bf35;
+}
+
+.container .item7 {
+  background-color: #b95f21;
+}
+
+.container .item8 {
+  background-color: #1c4c56;
+}
+
+.container .item9 {
+  background-color: #cfb276;
+}
+/*# sourceMappingURL=flex.css.map */
