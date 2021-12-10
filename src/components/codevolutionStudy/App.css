@@ -1,3 +1,17 @@
+* {
+  margin: 2px;
+}
+
+button {
+  padding: 3px 10px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+#root {
+  background-color: grey;
+}
+
 .inputbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,5 +31,14 @@ form button {
   margin-left: 100px;
   margin-top: 20px;
   padding: 5px 20px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=App.css.map */
