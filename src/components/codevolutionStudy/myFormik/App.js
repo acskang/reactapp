@@ -1,11 +1,13 @@
-import "./App.css";
+// import "./App.css";
 import React from "react";
-import ManagingFormState from "./ManagingFormState";
+import LoginForm from "./LoginForm";
+import { theme, ThemeProvider } from "@chakra-ui/react";
+
 function App() {
   return (
-    <div>
-      <ManagingFormState />
-    </div>
+    <ThemeProvider theme={theme}>
+      <LoginForm />
+    </ThemeProvider>
   );
 }
 
